@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Title</h1>
+    <p id="description"> explanation</p>
+    <form id="survey-form" method="post">
+        <fieldset>
+            <label id="name-label" for="name">Name<input required id="name" placeholder="Please, enter your name"></input></label>
+            <label id="email-label" for="email">Email<input id="email" type="email" required placeholder="Please, enter your email"></input></label>
+            <label id="number-label" for="number">Number<input id="number" type="number" min="0" max="9" placeholder="Please, enter number"></input></label>
+        </fieldset>
+        <fieldset>
+            <label><input></input></label>
+            <label>
+                <select id="dropdown">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label><input type="radio" name="radioname" value="bass"</input></label>
+            <label><input type="radio" name="radioname" value="guitar"></input></label>
+        </fieldset>
+        <fieldset>
+            <label><input type="checkbox" value="somth1"></input></label>
+            <label><input type="checkbox" value="somth2"></input></label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <textarea placeholder="Please, text some information"></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit"></input>
+    </form>
+</body>
+</html>
